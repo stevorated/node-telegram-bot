@@ -26,6 +26,14 @@ const init = async () => {
 app.post(endpoint, async (req, res) => {
   console.log(req.body);
 
+  const { chat, text } = req.body.message;
+  const chatId = chat.id;
+
+  await axios.post(`${api}/sendMessage`, {
+    chat_id: chatId,
+    text,
+  });
+
   return res.send();
 });
 
