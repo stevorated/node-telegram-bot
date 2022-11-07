@@ -13,13 +13,11 @@
 ngrok http 5000
 ```
 
-4. and copy the Forwarding address
+4. Copy the Forwarding address from the log you get from ngrok in the terminal
 
 ```
 Forwarding                    https://copy.this.link.and.paste.in.env.file -> http://localhost:5000
 ```
-
-and run 
 
 5. Create a dotenv file `.env` in root directory of your project.
 
